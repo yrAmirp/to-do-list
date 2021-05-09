@@ -1,0 +1,111 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: rgb(12, 13, 12);
+  background: linear-gradient(
+    180deg,
+    rgba(12, 13, 12, 1) 55%,
+    rgba(62, 79, 61, 1) 100%
+  );
+}
+
+.to-do-list {
+}
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.to-do-list__title {
+  margin: 20px 0 15px 0;
+  font-size: 40px;
+  color: #a7c5b2;
+}
+
+.to-do-list__input-field {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+.to-do-list__input-field input {
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 5px 10px 5px 10px;
+}
+
+.to-do-list__add-button {
+  margin-left: 10px;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 5px 15px 5px 15px;
+  background: rgb(167, 197, 178);
+  background: linear-gradient(
+    180deg,
+    rgba(167, 197, 178, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.to-do-list__add-button:hover {
+  box-shadow: 0 0 5px #525752, 0 0 15px #3c413c;
+}
+.to-do-list__list-of-tasks {
+  margin: 30px 0 0 0;
+}
+.to-do-list__list-of-tasks h2 {
+  color: rgb(167, 197, 178);
+  font-size: 30px;
+}
+.to-do-list__tasks {
+}
+.to-do-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  padding: 10px;
+  background: rgb(163, 170, 156);
+  border-radius: 5px;
+}
+.to-do-item.checked {
+  background: rgb(119, 126, 113);
+  opacity: 0.9;
+}
+.to-do-item.checked .description {
+  text-decoration: line-through;
+}
+.to-do-item .description {
+  color: rgb(179, 240, 179);
+  font-size: 20px;
+  text-transform: lowercase;
+  margin: 0 15px 0 0;
+  max-width: 300px;
+}
+.to-do-item .buttons {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.to-do-item .btn-complete {
+  margin: 0 5px 0 0;
+}
+.to-do-item .btn-color {
+  width: 20px;
+  margin: 0 5px 0 0;
+}
+.to-do-item .btn-delete {
+  background: none;
+}
+.to-do-item.delition {
+  animation: opacity 0.5s ease;
+}
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

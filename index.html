@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/resetStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Список задач</title>
+  </head>
+  <body>
+    <section class="to-do-list">
+      <div class="wrapper">
+        <div class="flex-container">
+          <h1 class="to-do-list__title">Добавить задачу</h1>
+          <div class="to-do-list__input-field">
+            <input type="text" name="task" class="to-do-list__task-input" />
+            <button type="button" class="to-do-list__add-button">
+              Добавить
+            </button>
+          </div>
+          <div class="to-do-list__list-of-tasks">
+            <h2>Список задач</h2>
+            <div class="to-do-list__tasks"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/index.js"></script>
+  </body>
+</html>
